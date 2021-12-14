@@ -1,0 +1,88 @@
+<!-- HEADER -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link href="./../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="./../assets/css/style.css" rel="stylesheet" />
+    <link href="./../assets/fontawesome-free/css/all.css" rel="stylesheet" />
+    <title>E-Commerce</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#"
+        ><i class="fas fa-shopping-cart  mr-1"></i> E-<span
+          class="r"
+          >Commerce</span
+        ></a
+      >
+    </nav>
+    <div class="container-fluid" style="padding: 20px">
+      <div class="row">
+        <div class="col-md-2">
+          <!-- SIDEBAR -->
+          <div class="list-group">
+            <a href="listeProduit.html" class="list-group-item list-group-item-action "><i class="fas fa-list mr-3"></i>Produits</a>
+            <a href="panier.html" class="list-group-item list-group-item-action active"><i class="fas fa-luggage-cart mr-3"></i>Panier</a>
+          </div>
+        </div>
+        <div class="col-md-10">
+          <div class="card card-outline bg-white">
+            <div class="card-header bg-transparent text-uppercase">
+              <div class="row">
+                <div class="col-md-8"><h3>Panier</h3></div>
+              </div>
+              
+            </div>
+            <div class="card-body">
+          
+          <!-- Affichage -->
+              
+              <table class="table card-outline-o mb-4 my-3">
+              <thead>
+                  <tr id="style">
+                    <th scope="col">#</th>
+                    
+                      <th scope="col" >Nom</th>
+                      <th scope="col" >Prix(en Ariary)</th>
+                      <th scope="col" >Quantité</th>
+                      <th scope="col" >Montant</th>
+                  </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Min-Sao</td>
+                    <td>2000</td>
+                    <td>4</td>
+                    <td>8000</td>
+                  </tr>
+          
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Soupe</td>
+                    <td>3000</td>
+                    <td>2</td>
+                    <td>6000</td>
+                  </tr>
+          
+                </tr></tbody>
+              </table>
+            </div>
+          </div>
+          <div class="card border border-primary">
+            <div class="card-body">
+              Total montant : 14000
+            </div>
+          </div>
+          
+          
+        </div>
+      </div>
+      <!-- FOOTER -->
+    </div>
+    <script src="./../assets/jquery/jquery.js"></script>
+    <script src="./../assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./../assets/bootstrap/js/bootstrap.bundle.js"></script>
+  </body>
+</html>
