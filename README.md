@@ -18,3 +18,13 @@ Mini projet pour ce samedi 18 Décembre 2021
         - Démo à partir des interfaces créées.
     Part 2: [15h"30 - 16h]
         - Questions, Réponses.
+
+## NB
+Les approches utilisés ici ne sont que pour illustrer l'utilisation de l'algorithme de base,
+avec certaine methode liée au navigateur.
+Donc, c'est pour vous donner une image à quoi bon continuer hormis la fonction du second degré, le factoriel... ;)
+
+### installer un live server
+si vous utiliser vscode comme editeur, installer l'extension live server et lancer le avec l'environnement
+pour que la fonction fetch marche tres bien
+sinon, essayer de passer le site sur un serveur local

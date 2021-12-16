@@ -1,0 +1,97 @@
+<!-- HEADER -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link href="./../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="./../assets/css/style.css" rel="stylesheet" />
+    <link href="./../assets/fontawesome-free/css/all.css" rel="stylesheet" />
+    <title>E-commerce</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#"
+        ><i class="fas fa-shopping-cart text-primary"></i> E-<span
+          class="text-primary"
+          >Commerce</span
+        ></a
+      >
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div
+        class="collapse navbar-collapse row justify-content-end"
+        id="navbarSupportedContent"
+      >
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#" aria-disabled="false"
+              ><i class="fa fa-bell"></i
+            ></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" aria-disabled="false"
+              ><i class="fas fa-user"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container-fluid" style="padding: 20px">
+      <!-- BODY -->
+      <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-header text-center font-weight-bold">Login</div>
+            <div class="card-body">
+              <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Identifiant</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleInputEmail1"
+                    aria-describedby="emailHelp"
+                    placeholder="Entrer votre identifiant"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Mot de passe</label>
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="exampleInputPassword1"
+                    placeholder="Entre votre mot de passe"
+                  />
+                </div>
+                <div class="text-center">
+                  <button type="submit" class="btn btn-primary" onclick="onAuthenticate(event)">
+                    Se connecter
+                  </button>
+                </div>
+              </form>
+              <hr>
+              <a href="#"><p class="text-primary text-center"><em>Mot de passe oublié?</em></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- FOOTER -->
+    </div>
+    <script src="./../assets/jquery/jquery.js"></script>
+    <script src="./../assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./../assets/bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="./../assets/scripts/services.js"></script>
+    <script src="./../assets/scripts/auth.js"></script>
+  </body>
+</html>
