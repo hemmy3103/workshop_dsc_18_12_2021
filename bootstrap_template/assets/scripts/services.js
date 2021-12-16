@@ -31,8 +31,20 @@ function removeSession() {
 
 // Gestion des produits //
 
+const KEY_PRODUCTS = "PRODUCTS";
 
+function getProducts() {
+    const products = JSON.parse(window.localStorage.getItem(KEY_PRODUCTS));
+    if (!products) {
+        window.localStorage.setItem(KEY_PRODUCTS, JSON.stringify([]));
+        return [];
+    }
+    return products;
+}
 
+function setProducts(products) {
+    window.localStorage.setItem(KEY_PRODUCTS, JSON.stringify(products));
+}
 
 
 // Gestion des paniers //
