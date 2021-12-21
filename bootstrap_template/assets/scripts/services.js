@@ -9,6 +9,7 @@ async function getUsers() {
         .then(response => {
             return response.json();
         })
+        //function get(data){return data.users}
         .then(data => data.users);
     return users;
 }
@@ -34,7 +35,7 @@ function removeSession() {
 const KEY_PRODUCTS = "PRODUCTS";
 
 function getProducts() {
-    const products = JSON.parse(window.localStorage.getItem(KEY_PRODUCTS));
+    const products : any = JSON.parse(window.localStorage.getItem(KEY_PRODUCTS));
     if (!products) {
         window.localStorage.setItem(KEY_PRODUCTS, JSON.stringify([]));
         return [];
@@ -48,3 +49,17 @@ function setProducts(products) {
 
 
 // Gestion des paniers //
+const KEY_PANIERS = "PANIERS";
+
+function getPaniers() {
+    const paniers = JSON.parse(window.sessionStorage.getItem(KEY_PANIERS));
+    if (!paniers) {
+        window.sessionStorage.setItem(KEY_PANIERS, JSON.stringify([]));
+        return [];
+    }
+    return paniers;
+}
+
+function setPaniers(paniers) {
+    window.sessionStorage.setItem(KEY_PANIERS, JSON.stringify(paniers));
+}

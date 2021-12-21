@@ -9,7 +9,7 @@
     <title>E-commerce</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark clearfix">
       <a class="navbar-brand" href="#"
         ><i class="fas fa-shopping-cart  mr-1"></i> E-<span
           class=""
@@ -25,6 +25,8 @@
             <a href="listeProduit.html" class="list-group-item list-group-item-action active"><i class="fas fa-list mr-3"></i>Produits</a>
             <a href="panier.html" class="list-group-item list-group-item-action"><i class="fas fa-luggage-cart mr-3"></i>Panier</a>
           </div>
+          <button class="btn btn-danger mt-5 " id="sign-out"><i class="fas fa-sign-out-alt" aria-hidden="true"></i> Lougout</button>
+
         </div>
         <div class="col-md-10">
           <div class="card card-outline bg-white">
@@ -41,7 +43,7 @@
                     <input type="text" class="form-control" placeholder="Nom du produit" id="name-add">
                   </div>
                   <div class="col">
-                    <input type="text" class="form-control" placeholder="Prix du produit" id="price-add">
+                    <input type="number" class="form-control" placeholder="Prix du produit" id="price-add">
                   </div>
                   <div class="col">
                     <a type="button" class="btn btn-primary " href="" id="add-button"> <i class="fas fa-plus mr-3"></i>Ajouter</a> 
@@ -49,19 +51,6 @@
                 </div>
               </form>
               <hr>
-              <form>
-                <div class="form-row">
-                  <div class="col-5">
-                    <input type="text" class="form-control" placeholder="Nom du produit">
-                  </div>
-                  <div class="col">
-                    <input type="text" class="form-control" placeholder="Prix du produit">
-                  </div>
-                  <div class="col">
-                    <a type="button" class="btn btn-dark " href=""> <i class="fas fa-plus mr-3"></i>Modifier</a> 
-                  </div>
-                </div>
-              </form>
           
           <!-- Affichage -->
               
@@ -92,5 +81,6 @@
     <script src="./../assets/bootstrap/js/bootstrap.bundle.js"></script>
     <script src="./../assets/scripts/services.js"></script>
     <script src="./../assets/scripts/app.js"></script>
+    <script src="./../assets/scripts/products.js"></script>
   </body>
 </html>

@@ -25,6 +25,8 @@
             <a href="listeProduit.html" class="list-group-item list-group-item-action "><i class="fas fa-list mr-3"></i>Produits</a>
             <a href="panier.html" class="list-group-item list-group-item-action active"><i class="fas fa-luggage-cart mr-3"></i>Panier</a>
           </div>
+          <button class="btn btn-danger mt-5 " id="sign-out"><i class="fas fa-sign-out-alt" aria-hidden="true"></i> Lougout</button>
+
         </div>
         <div class="col-md-10">
           <div class="card card-outline bg-white">
@@ -37,42 +39,40 @@
             <div class="card-body">
           
           <!-- Affichage -->
-              
+        <form>
+          <div class="form-row">
+            <div class="col-5">
+              <select name="menu" id="menu" class="form-control"  >
+                <option value="none" selected> Choisir le Menu : </option>
+
+              </select>
+            </div>
+            <div class="col">
+              <input type="number" class="form-control" placeholder="Quantité" id="quantity-add">
+            </div>
+            <div class="col">
+              <a type="button" class="btn btn-primary " href="#" id="add-panier"> <i class="fas fa-plus mr-3"></i>Ajouter</a> 
+            </div>
+          </div>
+        </form>
               <table class="table card-outline-o mb-4 my-3">
               <thead>
                   <tr id="style">
                     <th scope="col">#</th>
-                    
                       <th scope="col" >Nom</th>
                       <th scope="col" >Prix(en Ariary)</th>
                       <th scope="col" >Quantité</th>
                       <th scope="col" >Montant</th>
                   </tr>
                 </thead>
-                <tbody>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>Min-Sao</td>
-                    <td>2000</td>
-                    <td>4</td>
-                    <td>8000</td>
-                  </tr>
-          
-                <tr>
-                    <th scope="row">1</th>
-                    <td>Soupe</td>
-                    <td>3000</td>
-                    <td>2</td>
-                    <td>6000</td>
-                  </tr>
-          
-                </tr></tbody>
+                <tbody id="panierTab">
+                </tbody>
               </table>
             </div>
           </div>
           <div class="card border border-primary">
             <div class="card-body">
-              Total montant : 14000
+              Total montant : <span id="Prix-Total"></span>
             </div>
           </div>
           
@@ -86,5 +86,6 @@
     <script src="./../assets/bootstrap/js/bootstrap.bundle.js"></script>
     <script src="./../assets/scripts/services.js"></script>
     <script src="./../assets/scripts/app.js"></script>
+    <script src="./../assets/scripts/panier.js"></script>
   </body>
 </html>
