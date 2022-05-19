@@ -35,7 +35,7 @@ function removeSession() {
 const KEY_PRODUCTS = "PRODUCTS";
 
 function getProducts() {
-    const products : any = JSON.parse(window.localStorage.getItem(KEY_PRODUCTS));
+    const products = JSON.parse(window.localStorage.getItem(KEY_PRODUCTS));
     if (!products) {
         window.localStorage.setItem(KEY_PRODUCTS, JSON.stringify([]));
         return [];
